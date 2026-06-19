@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   /* === PALETA — dostosuj do branży === */
-  :root{ --cream:#f4f3f1; --cream-2:#e6e3dd; --espresso:#121110; --espresso-2:#332f2a; --gold:#e8590c; --gold-d:#b8430a; --rose:#f4d3bd; --muted:#6f6a63; --white:#ffffff; --shadow:0 18px 50px -22px rgba(18,17,16,.55); }
+  :root{ --cream:#0f0e0c; --cream-2:#161311; --espresso:#0c0b0a; --espresso-2:#2a2622; --gold:#ff6a1a; --gold-d:#f2620c; --rose:#f4d3bd; --muted:#a59f97; --white:#1a1714; --shadow:0 18px 50px -22px rgba(0,0,0,.7); }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{font-family:'Inter',sans-serif;color:var(--espresso);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased}
@@ -104,6 +104,18 @@
   @media(max-width:560px){.grid,.gallery{grid-template-columns:1fr}}
   .callbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;align-items:center;justify-content:center;gap:.55rem;background:linear-gradient(135deg,var(--gold),var(--gold-d));color:#fff;font-weight:600;font-size:1.02rem;padding:15px;text-decoration:none;box-shadow:0 -10px 30px -12px rgba(0,0,0,.45)}
   @media(max-width:880px){ .callbar{display:flex} body{padding-bottom:62px} }
+/* INK-DARK overrides — ciemny motyw, napisy biało-pomarańczowe */
+body{color:#f4f1ec}
+header{background:rgba(13,12,11,.86);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-links a{color:#cfc8bf} .burger{color:#f4f1ec}
+.hero{background:radial-gradient(circle at 80% 12%,rgba(255,106,26,.20),transparent 46%),radial-gradient(circle at 8% 92%,rgba(255,106,26,.10),transparent 42%),linear-gradient(160deg,#17120f 0%,#0c0b0a 100%)}
+.hero p.lead{color:#cfc8bf}
+.btn-gold{color:#161310}
+.btn-dark{background:transparent;border-color:rgba(255,255,255,.32);color:#f4f1ec} .btn-dark:hover{background:rgba(255,255,255,.08)}
+.card{border-color:rgba(255,255,255,.09)} .card:hover{border-color:rgba(255,106,26,.5)}
+.about{background:#141210} .about-txt p{color:#cfc8bf}
+.info .row{border-bottom-color:rgba(255,255,255,.10)}
+footer{background:#0a0908;color:#a59f97}
 </style>
 </head>
 <body>
